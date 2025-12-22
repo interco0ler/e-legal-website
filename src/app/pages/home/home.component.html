@@ -1,0 +1,148 @@
+<div class="w-full overflow-hidden relative bg-gradient-to-b from-[#0b0b0f] via-[#180018] to-[#12000f]">
+    <div class="size-[800px] bg-primary/20 backdrop-blur-xl rounded-full blur-[200px] absolute -top-[10%] -right-[10%] z-0"></div>
+    <div class="size-[600px] bg-primary/20 backdrop-blur-xl rounded-full blur-[200px] absolute -bottom-[10%] -left-[10%] z-0"></div>
+        <section class="relative max-w-7xl flex flex-col justify-center lg:h-[calc(100vh-64px)] mx-auto px-6 lg:px-8 pb-16 z-10">
+            <!-- <div class="pointer-events-none absolute inset-0 -z-10">
+                <div class="absolute -top-10 -left-10 w-72 h-72 rounded-full blur-3xl opacity-30"
+                    style="background: radial-gradient(60% 60% at 50% 50%, rgba(255,0,128,.35) 0%, rgba(0,0,0,0) 70%);">
+                </div>
+                <div class="absolute -bottom-16 -right-8 w-96 h-96 rounded-full blur-3xl opacity-30"
+                    style="background: radial-gradient(60% 60% at 50% 50%, rgba(255,75,75,.30) 0%, rgba(0,0,0,0) 70%);">
+                </div> sd
+            </div> -->
+    
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                        {{ 'home.hero.title' | translate }}
+                    </h1>
+                    <p class="text-zinc-300 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
+                        {{ 'home.hero.subtitle' | translate }}
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://betav5.webdex.fyi" target="_blank"
+                            class="bg-pink-500 hover:bg-pink-400 text-white px-5 py-3 rounded-lg font-medium shadow">
+                            {{ 'home.hero.ctaPrimary' | translate }}
+                        </a>
+                        <a routerLink="/automation"
+                            class="bg-white/10 hover:bg-white/20 text-white px-5 py-3 rounded-lg font-medium">
+                            {{ 'home.hero.ctaSecondary' | translate }}
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="relative h-screen">
+                    <img src="assets/images/coin-1.png" alt="" class="w-[200px] absolute top-[10%] right-1/2 floating-1">
+                    <img src="assets/images/coin-2.png" alt="" class="w-[300px] absolute top-[20%] -right-[10%] floating-2">
+                    <img src="assets/images/coin-3.png" alt="" class="w-[120px] absolute top-[40%] right-1/2 floating-3">
+                    <img src="assets/images/coin-4.png" alt="" class="w-[600px] absolute -bottom-[30%] -right-[20%] floating-4">
+                </div>
+            </div>
+        </section>
+</div>
+
+<section class="w-full bg-gradient-to-br from-[#040105] to-[#320016]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-3 gap-6 py-20">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8 md:col-span-2 flex items-center">
+            <div class="flex-1">
+                <h3 class="text-2xl md:text-3xl font-semibold mb-4">
+                    {{ 'home.blocks.defiTitle' | translate }}
+                </h3>
+                <p class="text-zinc-300 text-sm md:text-base leading-relaxed">
+                    {{ 'home.blocks.defiText' | translate }}
+                </p>
+            </div>
+            <div class="flex-shrink-0 ml-6">
+                <img src="/assets/home/bot.png" alt=""
+                    class="h-36 md:h-44 lg:h-52 drop-shadow-[0_0_20px_rgba(255,0,128,.25)]" />
+            </div>
+        </div>
+    
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8">
+            <div class="flex items-center justify-between">
+                <span class="text-zinc-300">{{ 'home.blocks.tvl' | translate }}</span>
+                <svg class="h-5 w-5 opacity-60" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 17l6-6 4 4 8-8v12H3z" />
+                </svg>
+            </div>
+            <div class="text-4xl font-bold my-3">{{ stats.tvl }}</div>
+    
+            <!-- gráfico placeholder -->
+            <div class="relative h-28 rounded-lg overflow-hidden bg-gradient-to-tr from-pink-600/40 to-fuchsia-600/30">
+                <svg class="absolute inset-0 w-full h-full opacity-70" viewBox="0 0 100 40" preserveAspectRatio="none">
+                    <path d="M0,35 L10,32 L22,28 L35,25 L50,20 L65,24 L78,21 L90,15 L100,10" fill="none"
+                        stroke="currentColor" stroke-width="2" />
+                </svg>
+            </div>
+        </div>
+    
+    
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8 md:row-start-2">
+            <div>
+                <div class="text-zinc-300 text-sm">{{ 'home.kpis.openOps' | translate }}</div>
+                <div class="text-3xl md:text-4xl font-bold mt-2">{{ stats.openOps }}</div>
+            </div>
+            <div class="mt-6">
+                <div class="text-zinc-300 text-sm">{{ 'home.kpis.performance' | translate }}</div>
+                <div class="text-3xl md:text-4xl font-bold mt-2">{{ stats.performance }}</div>
+            </div>
+        </div>
+    
+    
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8 md:col-span-2">
+            <div class="text-zinc-300 text-sm mb-2">{{ 'home.blocks.contractProfit' | translate }}</div>
+            <p class="text-base font-medium mb-5">
+                {{ 'home.blocks.contractProfitText' | translate }}
+            </p>
+    
+            <!-- barras (placeholder) -->
+            <div class="relative h-28 flex items-center justify-center">
+                <img src="assets/home/chart.png" alt="Gráfico de barras" class="h-full w-auto object-contain" />
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="w-full relative bg-[url('/assets/images/bg-advantages.jpg')] bg-cover bg-no-repeat bg-center">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-semibold mb-8">{{ 'home.advantages.title' | translate }}</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div *ngFor="let adv of advantages" class="bg-grey/20 backdrop-blur-lg border border-white/10 rounded-xl p-6">
+                <div class="mb-2 flex justify-start">
+                    <img [src]="adv.icon" alt="" class="size-16" />
+                </div>
+                <h3 class="text-xl font-medium mb-1 leading-tight">{{ adv.titleKey | translate }}</h3>
+                <p class="text-zinc-300 text-lg font-light leading-relaxed">{{ adv.descKey | translate }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tutoriais (carrossel) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+    <tutorial-carousel [items]="tutorials"></tutorial-carousel>
+</section>
+
+<!-- Visão -->
+<section class="w-full bg-[url('/assets/images/bg-about.jpg')] bg-cover bg-no-repeat bg-center">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-6 items-center">
+        <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden max-w-[80%]">
+            <img src="/assets/home/beyond.png" alt="image" class="w-full h-full object-cover">
+        </div>
+        <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-4">{{ 'home.vision.title' | translate }}</h3>
+            <p class="text-zinc-300 leading-relaxed">{{ 'home.vision.text' | translate }}</p>
+            <div class="mt-6 flex gap-3">
+                <a routerLink="/automation"
+                    class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium">
+                    {{ 'home.vision.cta1' | translate }}
+                </a>
+                <a routerLink="/contact"
+                    class="bg-pink-500 hover:bg-pink-400 text-white px-4 py-2 rounded-lg text-sm font-medium">
+                    {{ 'home.vision.cta2' | translate }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "type": "announcement",
+    "category": "release",
+    "titleKey": "changelog.entries.botv4.title",
+    "descriptionKey": "changelog.entries.botv4.description",
+    "author": "WEbdEX Team",
+    "date": "2024-12-15T10:00:00Z",
+    "tags": ["bot", "v4", "arbitragem"]
+  },
+  {
+    "id": "2",
+    "type": "announcement",
+    "category": "feature",
+    "titleKey": "changelog.entries.newSite.title",
+    "descriptionKey": "changelog.entries.newSite.description",
+    "author": "WEbdEX Team",
+    "date": "2025-01-08T18:30:00Z",
+    "tags": ["site", "frontend", "i18n"]
+  },
+  {
+    "id": "3",
+    "type": "content",
+    "category": "tutorial",
+    "titleKey": "changelog.entries.tutorialGas.title",
+    "descriptionKey": "changelog.entries.tutorialGas.description",
+    "author": "WEbdEX Team",
+    "date": "2025-01-05T10:15:00Z",
+    "tags": ["tutorial", "polygon", "gas"]
+  },
+  {
+    "id": "4",
+    "type": "announcement",
+    "category": "announcement",
+    "titleKey": "changelog.entries.launch.title",
+    "descriptionKey": "changelog.entries.launch.description",
+    "author": "WEbdEX Team",
+    "date": "2025-01-01T00:00:00Z",
+    "tags": ["anúncio", "lançamento"]
+  }
+]

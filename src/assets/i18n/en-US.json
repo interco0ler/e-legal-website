@@ -1,0 +1,399 @@
+{
+  "nav": {
+    "about": "About",
+    "automation": "Automation",
+    "contact": "Contact"
+  },
+  "cta": {
+    "startWeb3": "Start with Web3"
+  },
+  "footer": {
+    "cta": {
+      "title": "Join the Revolution of the New Digital Economy",
+      "cta1": "Contacts",
+      "cta2": "Talk to support"
+    },
+    "tagline": "Far beyond arbitrage: we are building the infrastructure for the new digital economy.",
+    "links": {
+      "title": "Navigation"
+    },
+    "legal": {
+      "title": "Legal",
+      "disclaimer": "Legal Disclaimer",
+      "privacy": "Privacy Policy"
+    },
+    "rights": "All rights reserved.",
+    "join": {
+      "title": "Join the Revolution of the New Digital Economy",
+      "cta1": "Contacts",
+      "cta2": "Talk to support"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Shaping the financial future in Web3",
+      "subtitle": "We are an intelligent automation ecosystem built on decentralization, security, and autonomy. Our technology runs inside the HotWallet, with smart contracts that ensure efficiency, control, and real results directly on-chain.",
+      "ctaPrimary": "Start with Web3",
+      "ctaSecondary": "See how it works"
+    },
+    "blocks": {
+      "defiTitle": "Purpose-driven DeFi technology",
+      "defiText": "We are a Web3 automation platform that connects everyday users to the crypto ecosystem in a simple, secure, and transparent way. Through our native smart contracts, you operate fully autonomously using your own wallet, directly in smart contracts, with results validated on-chain.",
+      "tvl": "TVL",
+      "contractProfit": "Contract profit",
+      "contractProfitText": "While the market falls, our users profit!"
+    },
+    "kpis": {
+      "openOps": "Open operations",
+      "performance": "Performance"
+    },
+    "advantages": {
+      "title": "Key advantages",
+      "sec": "Decentralized security",
+      "secDesc": "Operations validated by smart contracts — no custody, no promises, just real results.",
+      "rt": "Real-time technology",
+      "rtDesc": "The arbitrage bot finds and executes opportunities automatically, 24/7.",
+      "global": "Global and transparent access",
+      "globalDesc": "You control everything: deposits, withdrawals, history, and profitability via blockchain."
+    },
+    "tutorials": {
+      "title": "Tutorials",
+      "items": {
+        "addGas": "Adding Gas",
+        "addGas2": "Adding Signature",
+        "addGas3": "Executing Strategy"
+      }
+    },
+    "vision": {
+      "title": "Beyond arbitrage: we are building the infrastructure for the new digital economy!",
+      "text": "WEbdEX is just the beginning. Our vision includes new decentralized products, integration with other blockchains, advanced automations, and solutions for those who want to break free from the traditional financial system. This is the beginning of a new way to live, transact and grow.",
+      "cta1": "Understand",
+      "cta2": "Talk to support"
+    },
+    "ctaSection": {
+      "title": "Join the Revolution of the New Digital Economy",
+      "cta1": "Contacts",
+      "cta2": "Talk to support"
+    }
+  },
+  "lang": {
+    "english": "English",
+    "spanish": "Spanish",
+    "portuguese": "Portuguese"
+  },
+  "about": {
+    "hero": {
+      "title": "A new era of financial interaction. No banks. No barriers. No empty promises."
+    },
+    "intro": "We believe the future is decentralized — and we built WEbdEX so anyone, anywhere, can operate with freedom, security and intelligence. Our mission is to democratize access to Web3 technology, removing dependency on centralized institutions and intermediaries. With WEbdEX, you keep full control of your assets with automated, traceable and secure operations directly in your own wallet.",
+    "blocks": {
+      "movement": {
+        "title": "More than technology. A movement.",
+        "text": "WEbdEX was born to democratize access to decentralized technology and create a new standard of financial freedom: automated, transparent and secure."
+      },
+      "mission": {
+        "title": "Our mission",
+        "text": "Empower everyday people with automated and decentralized solutions so anyone can operate in the crypto universe with security and autonomy — no coding required, no hidden risks, and no reliance on third-party promises."
+      },
+      "drivers": {
+        "title": "What drives us",
+        "text": "We’re done with centralization, manipulation and needless friction. We build a truly open technology experience: transparent, validated by smart contracts, and always under your control."
+      },
+      "vision": {
+        "title": "Our vision of the future",
+        "text": "Become the global reference in decentralized DeFi automation, making access to Web3 as simple as pressing a button — and as trustworthy as the blockchain itself."
+      }
+    },
+    "pillars": {
+      "title": "Our pillars",
+      "transparency": {
+        "title": "Transparency",
+        "text": "Everything recorded, nothing hidden."
+      },
+      "tech": {
+        "title": "Technology",
+        "text": "Always evolving, always for the user."
+      },
+      "decentral": {
+        "title": "Decentralization",
+        "text": "You’re in control. Always."
+      },
+      "education": {
+        "title": "Education",
+        "text": "We explain, teach and make it accessible."
+      },
+      "purpose": {
+        "title": "Purpose-driven innovation",
+        "text": "We create what truly matters."
+      },
+      "community": {
+        "title": "Community",
+        "text": "We build together with you."
+      }
+    },
+    "team": {
+      "title": "A team passionate about financial freedom",
+      "text1": "WEbdEX is made up of experienced professionals in blockchain, automation and financial markets.",
+      "text2": "Our obsession is to deliver a solution that truly works — with ethics, performance and vision."
+    },
+    "cta": {
+      "contact": "Contacts",
+      "automation": "See automation"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Join the Revolution of the New Digital Economy",
+      "text": "At WEbdEX, we’re building more than technology — we’re powering a new way to connect Web3 with finance. Freedom, autonomy, and innovation are part of our DNA."
+    },
+    "pitch": {
+      "title": "Whether you’re a beginner or an experienced investor",
+      "text": "Our platform is ready to support you at every step. Decentralize your freedom. Automate your gains. Be part of WEbdEX."
+    },
+    "cta": {
+      "platform": "Access the platform",
+      "support": "Talk to support"
+    },
+    "alt": {
+      "heroImage": "Mascot with visual element",
+      "leftImage": "Illustration with WEbdEX coins"
+    }
+  },
+  "buttons": {
+    "back": "Back"
+  },
+  "tutorial": {
+    "title_contact": "Still not sure?",
+    "desc_contact": "Get in touch with our team or join our weekly community calls!",
+    "support": "Support",
+    "open_call": "Next call"
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": {
+      "q1": {
+        "question": "What is WEbdEX?",
+        "answer": "WEbdEX is a decentralized technology that works inside your wallet, using smart contracts to execute real-time arbitrage strategies in the DeFi universe."
+      },
+      "q2": {
+        "question": "How does WEbdEX work?",
+        "answer": "Using an intelligent protocol, WEbdEX connects Web3 wallets to execute decentralized exchanges (DEXs). When we identify arbitrage opportunities, we trigger real-time operations, in complete security and autonomy."
+      },
+      "q3": {
+        "question": "Do I need to send my funds to the platform?",
+        "answer": "No. You don't send funds nor transactions to WEbdEX. We work inside your own wallet, with complete traceability. You have full control of your wallet and can stop executions at any time."
+      },
+      "q4": {
+        "question": "Is WEbdEX safe?",
+        "answer": "Yes. Operations are executed through audited smart contracts, with southern traceability. You have full control of your wallet and can stop executions at any time."
+      },
+      "q5": {
+        "question": "Which blockchain networks are supported?",
+        "answer": "We currently operate on the Polygon network, due to its speed and low fees. We will soon be attracting other networks using the Ethereum Virtual Machine, such as Binance Smart Chain."
+      },
+      "q6": {
+        "question": "What is cryptocurrency arbitrage?",
+        "answer": "Arbitrage is buying an asset on a market at a lower price, and selling it on another market at a higher price, exploring the difference (DEXs). A profit opportunity without depending on the market going up or down."
+      },
+      "q7": {
+        "question": "What are the costs of using WEbdEX?",
+        "answer": "We only charge a service fee on your profits. There is no monthly fee, just our United States."
+      },
+      "q8": {
+        "question": "Do I need technical knowledge to use it?",
+        "answer": "No. WEbdEX is designed to be simple and intuitive. And if you want to delve deeper, we have courses and content to help you understand what is happening under the hood."
+      },
+      "q9": {
+        "question": "What happens if I lose the connection?",
+        "answer": "Don't worry. The Bot will continue operating and you can reconnect at any time via Web or mobile app, monitoring your results in real time."
+      },
+      "q10": {
+        "question": "Does WEbdEX have a support channel?",
+        "answer": "Yes, our community is active every day. We respond promptly via support and we host team and co-call questions."
+      }
+    },
+    "cta": {
+      "title": "Still not sure?",
+      "description": "Get in touch with our team or take part in our weekly community calls!",
+      "support": "Support",
+      "nextCall": "Next open call"
+    }
+  },
+  "legal": {
+    "title": "Legal Disclaimer",
+    "risks": {
+      "title": "Risks and Disclaimer of Liability",
+      "text": "While WEbdEX is designed to provide a secure and transparent experience within the DeFi ecosystem, it is crucial to acknowledge the risks involved. Users should be aware of these inherent risks associated with participation in decentralized finance. Here is an overview of the main risks."
+    },
+    "security": {
+      "title": "Security Risks",
+      "text": "WEbdEX employs extensive measures to ensure the protection of its users and assets. However, as with any DeFi technology, there is always a risk of vulnerabilities in smart contracts, and the loss of funds due to human errors. It is imperative to use secure wallets and follow security best practices."
+    },
+    "market": {
+      "title": "Market and Volatility Risks",
+      "text": "Digital assets are notoriously volatile, with the potential for significant value fluctuations. Users should be prepared to sustain losses if the market moves unfavorably or if asset prices change unexpectedly."
+    },
+    "liquidity": {
+      "title": "Liquidity Risks",
+      "text": "Liquidity can affect the ability to efficiently execute transactions. A lack of liquidity can result in difficulties in executing operations or finding counterparties at favorable prices."
+    },
+    "regulatory": {
+      "title": "Regulatory and Legal Risks",
+      "text": "The regulatory landscape for DeFi is dynamic and can vary by jurisdiction. Users should familiarize themselves with local regulations before participating in WEbdEX. WEbdEX does not provide legal advice, and it is the user's responsibility to seek appropriate legal guidance."
+    },
+    "notice": {
+      "title": "Important Notice",
+      "text": "Participation in WEbdEX does not create an employment relationship or guarantee of employment under CLT or any other labor legislation. WEbdEX is a decentralized platform that does not provide any type of labor contract or guarantee."
+    },
+    "awareness": {
+      "title": "Awareness of Regulations and Rights",
+      "text": "Participants are responsible for informing themselves about applicable laws and regulations before seeking employment or guidance in the platform."
+    },
+    "recommendations": {
+      "title": "Important Recommendations",
+      "text": "Before participating in WEbdEX, it is advisable to conduct research and seek pertinent information. If in doubt or if a financial loss is expected, the user should not participate."
+    },
+    "individual": {
+      "title": "Individual Responsibility and Legal Compliance",
+      "text": "Participants assume responsibility for their actions within WEbdEX and must act in accordance with the laws and regulations of their respective jurisdictions. WEbdEX is not responsible for specific losses."
+    },
+    "participation": {
+      "title": "Ensuring Safe and Responsible Participation",
+      "text": "A proper understanding of regulations and seeking professional guidance are fundamental for an informed and responsible participation in WEbdEX."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "introduction": {
+      "title": "Introduction",
+      "text": "At WEbdEX, your privacy is a priority. This document outlines how we collect, use, and protect your personal information when using our protocol and services. By accessing and using WEbdEX, you agree to the practices described in this policy."
+    },
+    "collection": {
+      "title": "Information Collection",
+      "text": "We collect personal and non-personal information to provide and improve our services. Information may be collected when you:",
+      "items": {
+        "wallet": "Create an account or connect your wallet;",
+        "transactions": "Perform transactions through the protocol;",
+        "support": "Interact with our support or participate in surveys."
+      },
+      "footer": "Information Collected:",
+      "collected": {
+        "wallet": "Wallet information (Name, wallet address);",
+        "usage": "Usage data: Information about how you use our protocol;",
+        "technical": "Technical information: IP address, device type, and location."
+      }
+    },
+    "use": {
+      "title": "Use of Information",
+      "text": "We use the information collected to:",
+      "items": {
+        "improve": "Provide and improve our services;",
+        "process": "Process transactions and ensure the security of the protocol;",
+        "personalize": "Personalize your experience and provide relevant communications;",
+        "communicate": "Communicate with you about updates and support."
+      }
+    },
+    "sharing": {
+      "title": "Information Sharing",
+      "text": "WEbdEX does not share your personal information with third parties, except:",
+      "items": {
+        "necessary": "When necessary to provide our services (e.g., payment partners);",
+        "comply": "To comply with legal or regulatory obligations;",
+        "consent": "With your explicit consent."
+      }
+    },
+    "security": {
+      "title": "Information Security",
+      "text": "We have implemented security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no internet transmission or storage system is completely secure and we cannot guarantee that your information is 100% secure."
+    },
+    "cookies": {
+      "title": "Cookies and Similar Technologies",
+      "text": "We use cookies and similar technologies to enhance your experience on our site and protocol, personalize content and ads, and analyze traffic. You can control your cookie preferences through your browser settings."
+    },
+    "rights": {
+      "title": "Your Rights You have the right to:",
+      "text": "Your Rights You have the right to:",
+      "items": {
+        "access": "Access, correct, or delete your personal information;",
+        "withdraw": "Withdraw consent for the use of your data;",
+        "portability": "Request data portability to another service;",
+        "complaint": "File a complaint with the relevant authority regarding the management of your personal data."
+      }
+    },
+    "changes": {
+      "title": "Changes to the Privacy Policy",
+      "text": "We may update this policy periodically. Changes will be communicated through our website or other appropriate means. We recommend that you review this policy regularly to stay informed about how we protect your information."
+    }
+  },
+  "automation": {
+    "hero": {
+      "title": "Arbitration automation, contract intelligence and enforcement within your portfolio."
+    },
+    "content": {
+      "text1": "We use optimized smart contracts that identify arbitrage opportunities in real time and operate automated 24/7, inside your own wallet. Everything happens inside your wallet (any wallet with block explorer) - no external platforms, no custody of your assets.",
+      "text2": "You have direct access to what really matters: profits with security, transparency and traceability via blockchain.",
+      "cta1": "Start with Web3",
+      "cta2": "Whitepaper"
+    },
+    "trust": {
+      "title": "Why trust WEbdEX automation?",
+      "velocity": {
+        "title": "Velocity",
+        "text": "Fast executions on multiple DEXs in real time"
+      },
+      "security": {
+        "title": "Real Security",
+        "text": "Operations validated by audited smart contracts"
+      },
+      "integration": {
+        "title": "Integration with your portfolio",
+        "text": "No centralized platforms, just you and the blockchain"
+      },
+      "strategies": {
+        "title": "Optimized strategies",
+        "text": "Algorithm adapts to market conditions to maximize opportunities"
+      },
+      "profit": {
+        "title": "Automated profit",
+        "text": "The bot generates profits and automatically transfers them to your wallet"
+      }
+    },
+    "video": {
+      "title": "How it works in practice"
+    },
+    "tutorials": {
+      "title": "Tutorials",
+      "subtitle": "Learn everything about how to use the WEbdEX platform",
+      "readMore": "Read more",
+      "empty": "No tutorials found with the selected filters"
+    }
+  },
+  "changelog": {
+    "title": "Changelog",
+    "subtitle": "Complete history of releases, updates and platform news",
+    "filters": {
+      "all": "All",
+      "announcements": "Announcements",
+      "content": "Content"
+    },
+    "empty": "No records found with the selected filters",
+    "entries": {
+      "botv4": {
+        "title": "Bot v4 Release",
+        "description": "New version of the arbitrage bot with significant improvements in performance and precision in DeFi operations."
+      },
+      "newSite": {
+        "title": "New WEbdEX institutional website",
+        "description": "Launch of the new institutional website with modern design, informative pages and multilingual support (PT, EN, ES)."
+      },
+      "tutorialGas": {
+        "title": "Tutorial: How to add Gas on Polygon network",
+        "description": "Complete step-by-step guide on how to add gas to operate on the Polygon network."
+      },
+      "launch": {
+        "title": "WEbdEX officially launched",
+        "description": "The WEbdEX decentralized automation platform is officially live and accepting new users."
+      }
+    }
+  }
+}

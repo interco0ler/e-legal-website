@@ -1,0 +1,93 @@
+<div class="bg-gradient-to-b from-[#0b0b0f] via-[#180018] to-[#12000f]">
+
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-8">
+        <h1 class="text-3xl md:text-5xl font-bold text-center leading-tight mb-8">
+            {{ 'about.hero.title' | translate }}
+        </h1>
+
+        <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+            <img [src]="heroImg" alt="" class="w-full h-auto object-cover">
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 pb-10">
+        <p class="text-zinc-200 leading-relaxed text-base md:text-lg">
+            {{ 'about.intro' | translate }}
+        </p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 pb-10 space-y-6">
+        <ng-container *ngFor="let c of cards; let i = index">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8
+                  flex flex-col md:flex-row gap-6" [ngClass]="{ 'md:flex-row-reverse': i % 2 === 1 }">
+
+                <div class="flex-1">
+                    <h3 class="text-2xl font-semibold mb-4">{{ c.titleKey | translate }}</h3>
+                    <p class="text-zinc-300 leading-relaxed">
+                        {{ c.textKey | translate }}
+                    </p>
+                </div>
+
+                <div class="flex-1 rounded-xl overflow-hidden border border-white/10 bg-white/0">
+                    <img [src]="c.img" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </ng-container>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 py-10">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center mb-8">
+            {{ 'about.pillars.title' | translate }}
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div *ngFor="let p of (pillars | slice:0:3)" class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <div class="text-3xl mb-3">{{ p.icon }}</div>
+                <h3 class="text-lg font-semibold mb-2">{{ p.titleKey | translate }}</h3>
+                <p class="text-zinc-300 text-sm leading-relaxed">
+                    {{ p.textKey | translate }}
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-6 grid md:grid-cols-2 gap-6 md:max-w-3xl mx-auto">
+            <div *ngFor="let p of (pillars | slice:3:5)" class="rounded-2xl border border-white/10 bg-white/5 p-6">
+                <div class="text-3xl mb-3">{{ p.icon }}</div>
+                <h3 class="text-lg font-semibold mb-2">{{ p.titleKey | translate }}</h3>
+                <p class="text-zinc-300 text-sm leading-relaxed">
+                    {{ p.textKey | translate }}
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 py-10 grid md:grid-cols-2 gap-6 items-center">
+        <div class="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+            <img [src]="teamImg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-4">
+                {{ 'about.team.title' | translate }}
+            </h3>
+            <p class="text-zinc-300 leading-relaxed mb-4">
+                {{ 'about.team.text1' | translate }}
+            </p>
+            <p class="text-zinc-300 leading-relaxed">
+                {{ 'about.team.text2' | translate }}
+            </p>
+
+            <div class="mt-6 flex gap-3">
+                <a routerLink="/contact"
+                    class="bg-pink-500 hover:bg-pink-400 text-white px-4 py-2 rounded-lg text-sm font-medium">
+                    {{ 'about.cta.contact' | translate }}
+                </a>
+                <a routerLink="/automation"
+                    class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium">
+                    {{ 'about.cta.automation' | translate }}
+                </a>
+            </div>
+        </div>
+    </section>
+
+</div>

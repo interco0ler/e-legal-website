@@ -1,0 +1,32 @@
+<section class="relative">
+  <div class="flex items-baseline justify-between mb-6 px-1">
+    <h2 class="text-3xl font-semibold">{{ 'home.tutorials.title' | translate }}</h2>
+  </div>
+
+  <swiper-container
+    #swiper
+    class="block"
+    init="false"
+    style="
+      --swiper-pagination-color: #fff;
+      --swiper-pagination-bullet-inactive-opacity: .4;
+    "
+  >
+    @for (item of items; track $index) {
+      <swiper-slide>
+        <a
+          [routerLink]="'/tutorials/'+item.slug"
+          class="w-full flex flex-col h-full bg-white/5 border border-white/10 rounded-xl overflow-hidden
+                 hover:shadow-[0_0_0_2px_rgba(255,0,128,.25)] transition select-none"
+        >
+          <img [src]="item?.thumb" alt="" class="w-full aspect-video object-cover">
+          <div class="p-4 min-h-[86px]">
+            <h3 class="text-lg font-semibold line-clamp-2">
+              {{ item.title }}
+            </h3>
+          </div>
+        </a>
+      </swiper-slide>
+    }
+  </swiper-container>
+</section>

@@ -1,0 +1,212 @@
+<div class="min-h-screen">
+
+    <!-- Section 1: Hero with Title and Dashboard -->
+    <section class="relative bg-gradient-to-b from-[#0b0b0f] via-[#1a0a1a] to-[#0b0b0f] pt-32 overflow-hidden">
+        <!-- Large Background Gradient Blobs (Yin Yang effect) -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <div class="absolute top-0 right-0 w-[1000px] h-[1000px] bg-purple-600/30 rounded-full blur-[150px] translate-x-1/3 -translate-y-1/4"></div>
+            <div class="absolute top-1/4 left-0 w-[900px] h-[900px] bg-pink-600/25 rounded-full blur-[140px] -translate-x-1/3"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 leading-tight max-w-4xl mx-auto">
+                {{ 'automation.hero.title' | translate }}
+            </h1>
+
+            <!-- Dashboard Image  -->
+            <div class="max-w-5xl mx-auto -mb-20">
+                <img src="assets/automation/img1.png" alt="Dashboard" class="w-full" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Mascot + Content -->
+    <section class="bg-gradient-to-b from-[#0b0b0f] via-[#180018] to-[#12000f] py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left: Mascot -->
+                <div class="relative">
+                    <img src="assets/automation/img2.jpg" alt="Mascot Robot" class="w-full h-auto rounded-3xl" />
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="space-y-6">
+                    <p class="text-zinc-300 leading-relaxed text-base">
+                        {{ 'automation.content.text1' | translate }}
+                    </p>
+                    <p class="text-zinc-300 leading-relaxed text-base">
+                        {{ 'automation.content.text2' | translate }}
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 pt-4">
+                        <a routerLink="/contact" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium transition">
+                            {{ 'automation.content.cta1' | translate }}
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 text-white px-6 py-2.5 rounded-lg text-sm font-medium transition border border-white/10">
+                            {{ 'automation.content.cta2' | translate }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Why Trust -->
+    <section class="bg-gradient-to-b from-[#12000f] via-[#0f0010] to-[#0b0b0f] py-20">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                {{ 'automation.trust.title' | translate }}
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <!-- Card 1: Velocity -->
+                <div class="bg-gradient-to-br from-[#2a1520] to-[#1a0a10] border border-white/10 rounded-xl p-8 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">{{ 'automation.trust.velocity.title' | translate }}</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">{{ 'automation.trust.velocity.text' | translate }}</p>
+                </div>
+
+                <!-- Card 2: Real Security -->
+                <div class="bg-gradient-to-br from-[#2a1520] to-[#1a0a10] border border-white/10 rounded-xl p-8 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">{{ 'automation.trust.security.title' | translate }}</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">{{ 'automation.trust.security.text' | translate }}</p>
+                </div>
+
+                <!-- Card 3: Integration -->
+                <div class="bg-gradient-to-br from-[#2a1520] to-[#1a0a10] border border-white/10 rounded-xl p-8 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">{{ 'automation.trust.integration.title' | translate }}</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">{{ 'automation.trust.integration.text' | translate }}</p>
+                </div>
+
+                <!-- Card 4: Optimized Strategies -->
+                <div class="bg-gradient-to-br from-[#2a1520] to-[#1a0a10] border border-white/10 rounded-xl p-8 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">{{ 'automation.trust.strategies.title' | translate }}</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">{{ 'automation.trust.strategies.text' | translate }}</p>
+                </div>
+
+                <!-- Card 5: Automated Profit (centered below) -->
+                <div class="bg-gradient-to-br from-[#2a1520] to-[#1a0a10] border border-white/10 rounded-xl p-8 text-center md:col-span-2 max-w-md mx-auto w-full">
+                    <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">{{ 'automation.trust.profit.title' | translate }}</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">{{ 'automation.trust.profit.text' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Video (Gray background) -->
+    <section class="bg-gradient-to-b from-[#1a1a1d] to-[#27272a] py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                {{ 'automation.video.title' | translate }}
+            </h2>
+
+            <div class="relative w-full max-w-5xl mx-auto rounded-xl overflow-hidden shadow-2xl">
+                <div class="relative pb-[56.25%]">
+                    <iframe
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/X4KlkHEw6ZE?si=kOodHz_5QDp3S3sK"
+                        title="How it works"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Tutorials -->
+    <section class="bg-gradient-to-b from-[#27272a] via-[#180018] to-[#0b0b0f] py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                {{ 'automation.tutorials.title' | translate }}
+            </h2>
+
+            <!-- Tutorial Filters -->
+            <div class="flex flex-wrap gap-3 mb-12">
+                <button (click)="filterTutorials('all')" [ngClass]="{'bg-pink-500': selectedFilter === 'all', 'bg-white/10': selectedFilter !== 'all'}" class="px-4 py-2 rounded-lg text-sm font-medium transition hover:bg-pink-600">
+                    Dashboard
+                </button>
+                <button (click)="filterTutorials('blockchain')" [ngClass]="{'bg-pink-500': selectedFilter === 'blockchain', 'bg-white/10': selectedFilter !== 'blockchain'}" class="px-4 py-2 rounded-lg text-sm font-medium transition hover:bg-pink-600">
+                    Blockchain
+                </button>
+                <button (click)="filterTutorials('metamask')" [ngClass]="{'bg-pink-500': selectedFilter === 'metamask', 'bg-white/10': selectedFilter !== 'metamask'}" class="px-4 py-2 rounded-lg text-sm font-medium transition hover:bg-pink-600">
+                    Metamask
+                </button>
+                <button (click)="filterTutorials('binance')" [ngClass]="{'bg-pink-500': selectedFilter === 'binance', 'bg-white/10': selectedFilter !== 'binance'}" class="px-4 py-2 rounded-lg text-sm font-medium transition hover:bg-pink-600">
+                    Binance
+                </button>
+                <button (click)="filterTutorials('api')" [ngClass]="{'bg-pink-500': selectedFilter === 'api', 'bg-white/10': selectedFilter !== 'api'}" class="px-4 py-2 rounded-lg text-sm font-medium transition hover:bg-pink-600">
+                    API
+                </button>
+            </div>
+
+            <!-- Tutorial Grid -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <div *ngFor="let tutorial of filteredTutorials" class="bg-gradient-to-br from-[#2a1520] to-[#1a0a10] border border-white/10 rounded-xl overflow-hidden hover:border-pink-500/30 transition-all duration-300 group">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-purple-900/20 to-pink-900/20">
+                        <img [src]="tutorial.thumb || 'assets/tutorials/placeholder.png'" [alt]="tutorial.title" class="w-full h-56 object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+
+                        <!-- Top Left Badge -->
+                        <div class="absolute top-4 left-4">
+                            <div class="flex items-center gap-2 bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Left Logo -->
+                        <div class="absolute bottom-4 left-4">
+                            <img src="assets/logos/logo-dark.png" alt="WEbdEX" class="h-6 w-auto" />
+                        </div>
+
+                        <!-- Download Icon (conditional) -->
+                        <div class="absolute top-4 right-4">
+                            <div class="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-base font-semibold mb-1 line-clamp-1">{{ tutorial.title }}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div *ngIf="filteredTutorials.length === 0" class="text-center py-16">
+                <p class="text-zinc-400 text-lg">{{ 'automation.tutorials.empty' | translate }}</p>
+            </div>
+        </div>
+    </section>
+
+</div>

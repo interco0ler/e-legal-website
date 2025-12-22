@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Syne', sans-serif;
+
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #a9a9a9;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #909090 !important;
+        }
+    }
+
+    body {
+
+        button,
+        li,
+        a,
+        span {
+            @apply transition-all duration-75 cursor-pointer disabled:cursor-not-allowed;
+        }
+
+        button:hover,
+        a:hover,
+        li:hover,
+        span:hover {
+            @apply transition-all duration-75;
+        }
+    }
+}
+
+
+swiper-container {
+    --swiper-pagination-color: #ffffff;
+    /* cor da bolinha ativa */
+    --swiper-pagination-bullet-inactive-color: #ffffff;
+    /* cor das inativas */
+    --swiper-pagination-bullet-inactive-opacity: .35;
+    /* inativas mais discretas */
+    --swiper-pagination-bullet-size: 6px;
+    /* bolinha menor */
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+    /* espacinho entre elas */
+}
+
+swiper-container::part(pagination) {
+    margin-top: 8px;
+}
+
+swiper-container::-webkit-scrollbar {
+    display: none;
+}
+
+swiper-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}

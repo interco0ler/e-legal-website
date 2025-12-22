@@ -1,0 +1,63 @@
+<div class="w-full">
+    <section class="w-full max-w-7xl mx-auto px-4 lg:px-6 flex flex-col py-8 lg:py-16">
+        <button (click)="back()" class="flex items-center gap-2 text-white text-md hover:opacity-80">
+            <lucide-icon name="chevron-left" class="size-4"></lucide-icon>
+            {{'buttons.back' | translate}}
+        </button>
+
+        @if (loading) {
+            <div class="w-full h-auto aspect-video rounded-2xl bg-white/10 animate-pulse mt-10 mx-auto"></div>
+        } @else {
+            <img src="{{data?.thumb}}" alt="" class="w-full aspect-video rounded-2xl mt-10 mx-auto">
+        }
+    </section>
+</div>
+
+<div class="w-full">
+    <section class="w-full max-w-7xl mx-auto px-4 lg:px-6 flex flex-col pb-16">
+        <!-- INFOS -->
+        <div class="w-full flex flex-col gap-3 pb-8">
+            <h1 class="text-xl lg:text-[40px] font-semibold text-white line-clamp-2">{{data?.title}}</h1>
+            <div class="flex items-center gap-3">
+                <div class="size-8 rounded-full overflow-hidden flex items-center justify-center font-medium">
+                    <img src="favicon.ico" alt="" class="w-full h-full object-cover">
+                </div>
+                <span>WEbdEX</span>
+                <div class="w-px h-8 bg-white/20"></div>
+                <span class="lining-nums">
+                    {{data?.date | date: 'dd MMM YY'}}
+                </span>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="w-full flex flex-col lg:flex-row gap-5">
+            <div class="w-full lg:w-2/3 flex flex-col">
+                <div [innerHTML]="data?.content" class="w-full flex flex-col gap-5 text-md lg:text-lg font-normal max-w-full overflow-hidden text-wrap whitespace-normal"></div>
+            </div>
+            <div class="w-full lg:w-1/3 relative">
+                <div class="w-full lg:sticky lg:top-20 bg-gradient-to-br from-[#90575B] to-[#5A184A] rounded-[15px] p-px flex">
+                    <div class="w-full bg-gradient-to-br from-[#742D32] to-[#530E43] rounded-[14px] p-5 flex flex-col">
+                        <img src="assets/images/support-thumb.jpg" alt="" class="w-full rounded-md">
+                        <div class="w-full flex flex-col gap-1 px-2 py-5">
+                            <span class="text-xl font-semibold text-white">
+                                {{'tutorial.title_contact' | translate}}
+                            </span>
+                            <p class="text-lg text-white">
+                                {{'tutorial.desc_contact' | translate}}
+                            </p>
+                        </div>
+                        <div class="w-full flex items-center gap-3">
+                            <button class="w-max px-6 py-2 rounded-md bg-gradient-to-br from-secondary to-primary text-lg font-medium text-white">
+                                {{'tutorial.support' | translate}}
+                            </button>
+                            <button class="flex-1 px-6 flex items-center justify-center py-2 rounded-md bg-gradient-to-br from-grey/50 to-grey/20 text-lg font-medium text-white">
+                                {{'tutorial.open_call' | translate}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
