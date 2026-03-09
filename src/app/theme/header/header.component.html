@@ -1,83 +1,37 @@
-<header class="w-full fixed inset-x-0 top-0 z-50 transition-colors"
-    [ngClass]="scrolled ? 'bg-zinc-900/70 backdrop-blur border-b border-white/10' : 'bg-transparent'">
-    <nav class="lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center text-white">
-        <a routerLink="/" class="flex items-center gap-3">
-            <img src="/assets/logos/logo-dark.png" alt="WEbdEX" class="h-8 w-auto" />
+<header class="w-full fixed inset-x-0 top-0 z-50 transition-all duration-500"
+    [ngClass]="scrolled ? 'bg-white/[0.03] backdrop-blur-2xl border-b border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.8)]' : 'bg-transparent'">
+    <nav class="lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center text-white">
+        
+        <a routerLink="/" class="flex items-center group no-underline">
+            <span class="text-2xl font-extrabold tracking-tighter uppercase italic">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-yellow-500 to-amber-600 drop-shadow-[0_0_8px_rgba(251,191,36,0.4)]">
+                    e-legal
+                </span>
+            </span>
         </a>
 
-        <ul class="hidden md:flex items-center gap-8 mx-auto text-sm">
-            <li>
-                <a routerLink="/about" routerLinkActive="text-pink-300" class="hover:text-pink-300 transition">
-                    {{ 'nav.about' | translate }}
-                </a>
-            </li>
-            <li>
-                <a routerLink="/automation" routerLinkActive="text-pink-300" class="hover:text-pink-300 transition">
-                    {{ 'nav.automation' | translate }}
-                </a>
-            </li>
-            <li>
-                <a routerLink="/contact" routerLinkActive="text-pink-300" class="hover:text-pink-300 transition">
-                    {{ 'nav.contact' | translate }}
-                </a>
-            </li>
-            <li>
-                <a routerLink="/faq" routerLinkActive="text-pink-300" class="hover:text-pink-300 transition">
-                    FAQ
-                </a>
-            </li>
-            <li>
-                <a routerLink="/changelog" routerLinkActive="text-pink-300" class="hover:text-pink-300 transition">
-                    Changelog
-                </a>
-            </li>
-            <li>
-                <a href="https://whitepaper-tokenomia-webdex.vercel.app/whitepaper/inflation-control-model" target="_blank" class="hover:text-pink-300 transition">
-                    Whitepaper
-                </a>
-            </li>
+        <ul class="hidden md:flex items-center gap-8 mx-auto text-[11px] font-bold uppercase tracking-[0.2em]">
+            <li><a routerLink="/nexus-legal" routerLinkActive="text-amber-400" class="text-zinc-300 hover:text-white transition-colors">Dashboard</a></li>
+            <li><a routerLink="/blog" routerLinkActive="text-amber-400" class="text-zinc-300 hover:text-white transition-colors">Blog</a></li>
+            <li><a routerLink="/comunidade" routerLinkActive="text-amber-400" class="text-zinc-300 hover:text-white transition-colors">Comunidade</a></li>
+            <li><a routerLink="/estatuto" routerLinkActive="text-amber-400" class="text-zinc-300 hover:text-white transition-colors">Estatuto</a></li>
+            <li><a routerLink="/contato" routerLinkActive="text-amber-400" class="text-zinc-300 hover:text-white transition-colors">Contato</a></li>
 
             <li>
-                <a routerLink="/contact"
-                    class="rounded-lg px-3 py-2 text-sm font-medium bg-pink-500 hover:bg-pink-400 text-white transition shadow">
-                    {{ 'cta.startWeb3' | translate }}
+                <a routerLink="/contato"
+                    class="rounded-xl px-5 py-2.5 bg-white/5 backdrop-blur-md border border-white/20 hover:border-amber-500/50 hover:bg-amber-500/10 hover:shadow-[0_0_20px_rgba(251,191,36,0.2)] text-white transition-all duration-300">
+                    Seja um Membro
                 </a>
             </li>
         </ul>
 
-        <div class="hidden md:flex items-center">
+        <div class="hidden md:flex items-center opacity-80 hover:opacity-100 transition-opacity">
             <lang></lang>
         </div>
 
-        <button type="button" class="md:hidden ml-auto inline-flex items-center justify-center rounded-md p-2"
-            aria-label="Menu" (click)="mobileOpen = !mobileOpen">
-            <svg *ngIf="!mobileOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                class="h-6 w-6 fill-current">
-                <path d="M3 6h18M3 12h18M3 18h18" />
-            </svg>
-            <svg *ngIf="mobileOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                <path d="M6 18L18 6M6 6l12 12" />
-            </svg>
+        <button type="button" class="md:hidden ml-auto inline-flex items-center justify-center rounded-md p-2 text-zinc-400" (click)="mobileOpen = !mobileOpen">
+            <svg *ngIf="!mobileOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+            <svg *ngIf="mobileOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current"><path d="M6 18L18 6M6 6l12 12" /></svg>
         </button>
     </nav>
-
-    <div *ngIf="mobileOpen" class="md:hidden bg-zinc-900/80 backdrop-blur border-t border-white/10">
-        <div class="px-4 py-3 space-y-2 text-white">
-            <a routerLink="/about" (click)="mobileOpen=false" class="block py-2">{{ 'nav.about' | translate }}</a>
-            <a routerLink="/automation" (click)="mobileOpen=false" class="block py-2">{{ 'nav.automation' | translate
-                }}</a>
-            <a routerLink="/faq" (click)="mobileOpen=false" class="block py-2">FAQ</a>
-            <a routerLink="/changelog" (click)="mobileOpen=false" class="block py-2">Changelog</a>
-            <a href="https://whitepaper-tokenomia-webdex.vercel.app/whitepaper/inflation-control-model" target="_blank" (click)="mobileOpen=false" class="block py-2">Whitepaper</a>
-            <a routerLink="/contact" (click)="mobileOpen=false" class="block py-2">{{ 'nav.contact' | translate }}</a>
-
-            <div class="pt-3 flex items-center justify-between">
-                <lang></lang>
-                <a routerLink="/contact" (click)="mobileOpen=false"
-                    class="rounded-lg px-3 py-2 text-sm font-medium bg-pink-500 hover:bg-pink-400 text-white transition shadow">
-                    {{ 'cta.startWeb3' | translate }}
-                </a>
-            </div>
-        </div>
-    </div>
 </header>

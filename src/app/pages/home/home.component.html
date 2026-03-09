@@ -1,146 +1,204 @@
-<div class="w-full overflow-hidden relative bg-gradient-to-b from-[#0b0b0f] via-[#180018] to-[#12000f]">
-    <div class="size-[800px] bg-primary/20 backdrop-blur-xl rounded-full blur-[200px] absolute -top-[10%] -right-[10%] z-0"></div>
-    <div class="size-[600px] bg-primary/20 backdrop-blur-xl rounded-full blur-[200px] absolute -bottom-[10%] -left-[10%] z-0"></div>
-        <section class="relative max-w-7xl flex flex-col justify-center lg:h-[calc(100vh-64px)] mx-auto px-6 lg:px-8 pb-16 z-10">
-            <!-- <div class="pointer-events-none absolute inset-0 -z-10">
-                <div class="absolute -top-10 -left-10 w-72 h-72 rounded-full blur-3xl opacity-30"
-                    style="background: radial-gradient(60% 60% at 50% 50%, rgba(255,0,128,.35) 0%, rgba(0,0,0,0) 70%);">
-                </div>
-                <div class="absolute -bottom-16 -right-8 w-96 h-96 rounded-full blur-3xl opacity-30"
-                    style="background: radial-gradient(60% 60% at 50% 50%, rgba(255,75,75,.30) 0%, rgba(0,0,0,0) 70%);">
-                </div> sd
-            </div> -->
+<div class="w-full overflow-hidden relative bg-gradient-to-b from-[#050505] via-[#121212] to-[#0a0a0a]">
+    <div class="size-[800px] bg-zinc-600/10 backdrop-blur-xl rounded-full blur-[200px] absolute -top-[10%] -right-[10%] z-0"></div>
+    <div class="size-[600px] bg-amber-600/10 backdrop-blur-xl rounded-full blur-[200px] absolute -bottom-[10%] -left-[10%] z-0"></div>
     
-            <div class="grid lg:grid-cols-2 gap-10 items-center">
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-                        {{ 'home.hero.title' | translate }}
-                    </h1>
-                    <p class="text-zinc-300 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
-                        {{ 'home.hero.subtitle' | translate }}
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="https://betav5.webdex.fyi" target="_blank"
-                            class="bg-pink-500 hover:bg-pink-400 text-white px-5 py-3 rounded-lg font-medium shadow">
-                            {{ 'home.hero.ctaPrimary' | translate }}
-                        </a>
-                        <a routerLink="/automation"
-                            class="bg-white/10 hover:bg-white/20 text-white px-5 py-3 rounded-lg font-medium">
-                            {{ 'home.hero.ctaSecondary' | translate }}
-                        </a>
+    <section class="relative max-w-7xl flex flex-col justify-center lg:h-[calc(100vh-64px)] mx-auto px-6 lg:px-8 pb-16 z-10 pt-10">
+        
+        <div class="pointer-events-none absolute inset-0 -z-10">
+            <div class="absolute -top-10 -left-10 w-72 h-72 rounded-full blur-3xl opacity-40"
+                style="background: radial-gradient(60% 60% at 50% 50%, rgba(251,191,36,.15) 0%, rgba(0,0,0,0) 70%);">
+            </div>
+            <div class="absolute -bottom-16 -right-8 w-96 h-96 rounded-full blur-3xl opacity-40"
+                style="background: radial-gradient(60% 60% at 50% 50%, rgba(255,255,255,.10) 0%, rgba(0,0,0,0) 70%);">
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white leading-tight">
+                    Materializando o<br>Direito em <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500">Código</span>
+                </h1>
+                <p class="text-zinc-200 text-base md:text-lg leading-relaxed mb-8 max-w-2xl font-light">
+                    Unindo Direito, Tecnologia e Blockchain para transformar o futuro do Direito Digital. A e-Legal é um laboratório de inovação prática focado na redefinição do paradigma jurídico através de contratos inteligentes, tokens e NFTs.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://e-legal.info/" target="_blank"
+                        class="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:shadow-[0_0_20px_rgba(251,191,36,0.3)] text-white px-6 py-3 rounded-lg font-medium transition-all duration-300">
+                        Faça Parte da Comunidade
+                    </a>
+                    <a routerLink="/nexus-legal"
+                        class="bg-transparent border border-white/20 hover:bg-white/10 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300">
+                        Conheça o Instituto
+                    </a>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex justify-center relative group cursor-default mt-10 lg:mt-0">
+                <div class="absolute -inset-1 bg-gradient-to-r from-zinc-600 to-amber-600 rounded-2xl blur opacity-30 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                
+                <div class="relative w-full max-w-lg aspect-[4/3] bg-[#121212]/80 border border-white/15 backdrop-blur-xl rounded-2xl flex flex-col items-center justify-center overflow-hidden shadow-2xl">
+                    <div class="w-full h-10 bg-white/5 border-b border-white/10 flex items-center px-4 gap-2 absolute top-0 left-0">
+                        <div class="size-3 rounded-full bg-red-500/80"></div>
+                        <div class="size-3 rounded-full bg-yellow-500/80"></div>
+                        <div class="size-3 rounded-full bg-green-500/80"></div>
+                        <span class="ml-4 text-xs text-zinc-300 font-mono">Nexus_Legal_Dashboard</span>
+                    </div>
+
+                    <div class="flex flex-col items-center mt-6 w-3/4">
+                        <div class="relative size-24 mb-6">
+                            <div class="absolute inset-0 border-2 border-amber-500/40 rounded-full animate-[spin_10s_linear_infinite]"></div>
+                            <div class="absolute inset-2 border-2 border-dashed border-zinc-400/50 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
+                            <svg class="size-10 text-amber-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-[0_0_12px_rgba(251,191,36,0.6)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                            </svg>
+                        </div>
+                        
+                        <h3 class="text-lg font-semibold text-white mb-4 tracking-wide text-center">Status do Contrato</h3>
+                        
+                        <div class="w-full bg-[#050505]/80 p-4 rounded-lg border border-white/10 flex flex-col gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="size-6 rounded-full bg-amber-500/20 flex items-center justify-center shrink-0">
+                                    <svg class="size-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-sm text-zinc-100 font-medium">Identidade Verificada (KYC)</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="size-6 rounded-full bg-amber-500/20 flex items-center justify-center shrink-0">
+                                    <svg class="size-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-sm text-zinc-100 font-medium">Smart Contract Auditado</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="size-6 rounded-full bg-amber-500/20 flex items-center justify-center shrink-0">
+                                    <svg class="size-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <span class="text-sm text-zinc-100 font-medium">Conformidade com a LGPD</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-    
-                <div class="relative h-screen">
-                    <img src="assets/images/coin-1.png" alt="" class="w-[200px] absolute top-[10%] right-1/2 floating-1">
-                    <img src="assets/images/coin-2.png" alt="" class="w-[300px] absolute top-[20%] -right-[10%] floating-2">
-                    <img src="assets/images/coin-3.png" alt="" class="w-[120px] absolute top-[40%] right-1/2 floating-3">
-                    <img src="assets/images/coin-4.png" alt="" class="w-[600px] absolute -bottom-[30%] -right-[20%] floating-4">
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 </div>
 
-<section class="w-full bg-gradient-to-br from-[#040105] to-[#320016]">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-3 gap-6 py-20">
-        <div class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8 md:col-span-2 flex items-center">
+<section class="w-full bg-[#050505] py-24 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-white/5 border border-white/10 p-8 rounded-3xl md:col-span-2 flex flex-col md:flex-row items-center gap-10 hover:bg-white/[0.07] transition-all group shadow-2xl">
             <div class="flex-1">
-                <h3 class="text-2xl md:text-3xl font-semibold mb-4">
-                    {{ 'home.blocks.defiTitle' | translate }}
-                </h3>
-                <p class="text-zinc-300 text-sm md:text-base leading-relaxed">
-                    {{ 'home.blocks.defiText' | translate }}
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 mb-6">
+                    <span class="size-2 rounded-full bg-amber-500 animate-pulse"></span>
+                    <span class="text-[10px] uppercase tracking-widest text-amber-500 font-bold">Laboratório Ativo</span>
+                </div>
+                <h3 class="text-3xl md:text-4xl font-bold mb-4 text-white">Laboratório de <span class="text-amber-500">Inovação Jurídica</span></h3>
+                <p class="text-zinc-400 leading-relaxed text-lg font-light">
+                    Atuamos como ponte entre a estabilidade do Direito e a aceleração da Tecnologia. Desenvolvemos pesquisas aplicadas em Blockchain e DeFi, emitindo selos de conformidade técnica para garantir a segurança jurídica no ecossistema.
                 </p>
             </div>
-            <div class="flex-shrink-0 ml-6">
-                <img src="/assets/home/bot.png" alt=""
-                    class="h-36 md:h-44 lg:h-52 drop-shadow-[0_0_20px_rgba(255,0,128,.25)]" />
-            </div>
-        </div>
-    
-        <div class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8">
-            <div class="flex items-center justify-between">
-                <span class="text-zinc-300">{{ 'home.blocks.tvl' | translate }}</span>
-                <svg class="h-5 w-5 opacity-60" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3 17l6-6 4 4 8-8v12H3z" />
-                </svg>
-            </div>
-            <div class="text-4xl font-bold my-3">{{ stats.tvl }}</div>
-    
-            <!-- gráfico placeholder -->
-            <div class="relative h-28 rounded-lg overflow-hidden bg-gradient-to-tr from-pink-600/40 to-fuchsia-600/30">
-                <svg class="absolute inset-0 w-full h-full opacity-70" viewBox="0 0 100 40" preserveAspectRatio="none">
-                    <path d="M0,35 L10,32 L22,28 L35,25 L50,20 L65,24 L78,21 L90,15 L100,10" fill="none"
-                        stroke="currentColor" stroke-width="2" />
+            <div class="size-48 flex-shrink-0 bg-zinc-900/50 rounded-2xl flex items-center justify-center border border-white/5 grayscale group-hover:grayscale-0 transition-all duration-700">
+                <svg class="size-24 text-amber-500/50 group-hover:text-amber-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
                 </svg>
             </div>
         </div>
-    
-    
-        <div class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8 md:row-start-2">
+
+        <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-amber-500/30 transition-all shadow-2xl">
+            <span class="text-zinc-500 text-xs font-bold uppercase tracking-widest block mb-4">Selos de Conformidade</span>
+            <div class="text-6xl font-bold mb-6 text-white">450<span class="text-amber-500">+</span></div>
+            <div class="h-28 bg-zinc-900/50 rounded-2xl border border-white/5 overflow-hidden relative">
+                <svg class="absolute inset-0 w-full h-full text-amber-500/20" viewBox="0 0 100 40" preserveAspectRatio="none">
+                    <path d="M0,35 L10,32 L25,33 L40,28 L60,30 L80,22 L100,18" fill="none" stroke="currentColor" stroke-width="2.5" />
+                </svg>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-[10px] font-mono text-amber-500/40 uppercase tracking-widest">Estabilidade do Protocolo</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 p-8 rounded-3xl flex flex-col justify-between hover:bg-white/[0.07] transition-all shadow-2xl">
             <div>
-                <div class="text-zinc-300 text-sm">{{ 'home.kpis.openOps' | translate }}</div>
-                <div class="text-3xl md:text-4xl font-bold mt-2">{{ stats.openOps }}</div>
+                <span class="text-zinc-500 text-xs font-bold uppercase tracking-widest block mb-2">Sandbox Regulatório</span>
+                <div class="text-4xl font-bold text-white">14 Projetos</div>
             </div>
-            <div class="mt-6">
-                <div class="text-zinc-300 text-sm">{{ 'home.kpis.performance' | translate }}</div>
-                <div class="text-3xl md:text-4xl font-bold mt-2">{{ stats.performance }}</div>
+            <div class="pt-8 mt-8 border-t border-white/10">
+                <span class="text-zinc-500 text-xs font-bold uppercase tracking-widest block mb-2">Conformidade LGPD</span>
+                <div class="text-4xl font-bold text-amber-500">100%</div>
             </div>
         </div>
-    
-    
-        <div class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8 md:col-span-2">
-            <div class="text-zinc-300 text-sm mb-2">{{ 'home.blocks.contractProfit' | translate }}</div>
-            <p class="text-base font-medium mb-5">
-                {{ 'home.blocks.contractProfitText' | translate }}
-            </p>
-    
-            <!-- barras (placeholder) -->
-            <div class="relative h-28 flex items-center justify-center">
-                <img src="assets/home/chart.png" alt="Gráfico de barras" class="h-full w-auto object-contain" />
+
+        <div class="bg-white/5 border border-white/10 p-8 rounded-3xl md:col-span-2 flex flex-col md:flex-row gap-8 hover:bg-white/[0.07] transition-all shadow-2xl">
+            <div class="flex-1">
+                <span class="text-zinc-500 text-xs font-bold uppercase tracking-widest block mb-2">Inteligência Artificial</span>
+                <h3 class="text-2xl font-bold mb-4 text-white">Mapa de Calor de Riscos</h3>
+                <p class="text-zinc-400 font-light leading-relaxed">
+                    Nossa IA identifica cláusulas críticas para revisão humana imediata, garantindo segurança jurídica máxima em cada bloco.
+                </p>
+            </div>
+            <div class="flex items-end gap-3 h-28 px-4 bg-black/20 rounded-xl p-4 border border-white/5">
+                <div class="w-8 bg-zinc-800 rounded-t-sm h-[20%]"></div>
+                <div class="w-8 bg-zinc-800 rounded-t-sm h-[45%]"></div>
+                <div class="w-8 bg-amber-500/40 rounded-t-sm h-[95%] animate-pulse"></div>
+                <div class="w-8 bg-zinc-800 rounded-t-sm h-[35%]"></div>
+                <div class="w-8 bg-zinc-800 rounded-t-sm h-[65%]"></div>
+                <div class="w-8 bg-zinc-800 rounded-t-sm h-[15%]"></div>
             </div>
         </div>
     </div>
-
 </section>
 
 <section class="w-full relative bg-[url('/assets/images/bg-advantages.jpg')] bg-cover bg-no-repeat bg-center">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <h2 class="text-3xl font-semibold mb-8">{{ 'home.advantages.title' | translate }}</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div *ngFor="let adv of advantages" class="bg-grey/20 backdrop-blur-lg border border-white/10 rounded-xl p-6">
-                <div class="mb-2 flex justify-start">
-                    <img [src]="adv.icon" alt="" class="size-16" />
+    <div class="absolute inset-0 bg-[#050505]/95 backdrop-grayscale"></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 relative z-10">
+        <h2 class="text-3xl font-bold mb-12 text-center text-zinc-500 uppercase tracking-[0.4em] italic">Os Pilares Institucionais</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="bg-[#0f0f0f]/80 backdrop-blur-md border border-white/10 rounded-3xl p-10 hover:translate-y-[-10px] transition-all duration-500 shadow-lg">
+                <div class="mb-6 flex justify-start">
+                    <svg class="size-12 text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
                 </div>
-                <h3 class="text-xl font-medium mb-1 leading-tight">{{ adv.titleKey | translate }}</h3>
-                <p class="text-zinc-300 text-lg font-light leading-relaxed">{{ adv.descKey | translate }}</p>
+                <h3 class="text-2xl font-bold mb-3 text-white">Legal Design</h3>
+                <p class="text-zinc-400 text-lg font-light leading-relaxed">Integramos Direito e tecnologia para criar soluções acessíveis, justas e compreensíveis.</p>
+            </div>
+
+            <div class="bg-[#0f0f0f]/80 backdrop-blur-md border border-white/10 rounded-3xl p-10 hover:translate-y-[-10px] transition-all duration-500 shadow-lg">
+                <div class="mb-6 flex justify-start">
+                    <svg class="size-12 text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-white">Smart Contracts</h3>
+                <p class="text-zinc-400 text-lg font-light leading-relaxed">O código como infraestrutura normativa transparente, auditável e subordinada à ética.</p>
+            </div>
+
+            <div class="bg-[#0f0f0f]/80 backdrop-blur-md border border-white/10 rounded-3xl p-10 hover:translate-y-[-10px] transition-all duration-500 shadow-lg">
+                <div class="mb-6 flex justify-start">
+                    <svg class="size-12 text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.4)]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-white">Quádrupla Hélice</h3>
+                <p class="text-zinc-400 text-lg font-light leading-relaxed">Unimos Governo, Academia, Empresas e Sociedade Civil em prol da Justiça 4.0.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Tutoriais (carrossel) -->
-<section class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-    <tutorial-carousel [items]="tutorials"></tutorial-carousel>
-</section>
-
-<!-- Visão -->
-<section class="w-full bg-[url('/assets/images/bg-about.jpg')] bg-cover bg-no-repeat bg-center">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-6 items-center">
-        <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden max-w-[80%]">
-            <img src="/assets/home/beyond.png" alt="image" class="w-full h-full object-cover">
+<section class="w-full relative bg-[url('/assets/images/bg-about.jpg')] bg-cover bg-no-repeat bg-center">
+    <div class="absolute inset-0 bg-[#050505]/95 backdrop-grayscale"></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-24 grid md:grid-cols-2 gap-16 items-center relative z-10">
+        <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden shadow-2xl group">
+            <img src="/assets/home/beyond.png" alt="O futuro do direito" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-1000 grayscale group-hover:grayscale-0">
         </div>
-        <div>
-            <h3 class="text-2xl md:text-3xl font-semibold mb-4">{{ 'home.vision.title' | translate }}</h3>
-            <p class="text-zinc-300 leading-relaxed">{{ 'home.vision.text' | translate }}</p>
-            <div class="mt-6 flex gap-3">
-                <a routerLink="/automation"
-                    class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium">
-                    {{ 'home.vision.cta1' | translate }}
+        <div class="space-y-6">
+            <h3 class="text-3xl md:text-5xl font-bold text-white leading-tight">Preparando Juristas para a <span class="text-amber-500">Era Digital</span></h3>
+            <p class="text-zinc-400 leading-relaxed text-xl font-light">
+                Promovemos o letramento digital através de capacitações e certificações, unindo o rigor da lei à lógica da programação. O Instituto e-Legal trabalha ativamente na regulação tecnológica no Brasil.
+            </p>
+            <div class="mt-10 flex gap-6">
+                <a routerLink="/estatuto"
+                    class="bg-transparent border border-white/20 hover:bg-white/10 text-white px-8 py-3 rounded-xl text-sm font-bold transition-all duration-500">
+                    Ler Estatuto Social
                 </a>
-                <a routerLink="/contact"
-                    class="bg-pink-500 hover:bg-pink-400 text-white px-4 py-2 rounded-lg text-sm font-medium">
-                    {{ 'home.vision.cta2' | translate }}
+                <a routerLink="/contato"
+                    class="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:shadow-[0_0_20px_rgba(251,191,36,0.3)] text-white px-8 py-3 rounded-xl text-sm font-bold transition-all duration-500">
+                    Seja um Membro
                 </a>
             </div>
         </div>
