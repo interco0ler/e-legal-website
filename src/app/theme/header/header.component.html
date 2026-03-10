@@ -3,36 +3,34 @@
         ? 'bg-[#0A1128]/60 backdrop-blur-3xl border-b border-[#B8926A]/40 shadow-[0_10px_40px_rgba(0,0,0,0.8)]' 
         : 'bg-[#0A1128]/30 backdrop-blur-2xl border-b border-[#B8926A]/15'">
     
-    <nav class="lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center text-[#F4F4F9]">
+    <nav class="lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between text-[#F4F4F9] relative">
         
-        <a routerLink="/" class="flex items-center group no-underline">
-            <span class="text-2xl font-extrabold tracking-tighter uppercase italic">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#B8926A] via-[#F4F4F9] to-[#B8926A] drop-shadow-[0_0_10px_rgba(184,146,106,0.4)] group-hover:drop-shadow-[0_0_15px_rgba(184,146,106,0.6)] transition-all">
-                    e-legal
-                </span>
-            </span>
+        <a routerLink="/" class="flex items-center group no-underline shrink-0 z-10">
+            <img src="assets/logo.png" alt="Logo e-Legal" 
+                 class="h-14 w-auto object-contain transform scale-[1.4] origin-left group-hover:scale-[1.45] transition-transform duration-300 drop-shadow-[0_0_8px_rgba(244,244,249,0.2)]">
         </a>
 
-        <ul class="hidden md:flex items-center gap-8 mx-auto text-[11px] font-bold uppercase tracking-[0.2em]">
+        <ul class="hidden lg:flex items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] absolute left-1/2 transform -translate-x-1/2 w-max">
             <li><a routerLink="/nexus-legal" routerLinkActive="text-[#B8926A]" class="text-[#F4F4F9]/70 hover:text-[#B8926A] transition-all hover:tracking-[0.3em]">Dashboard</a></li>
             <li><a routerLink="/blog" routerLinkActive="text-[#B8926A]" class="text-[#F4F4F9]/70 hover:text-[#B8926A] transition-all hover:tracking-[0.3em]">Blog</a></li>
             <li><a routerLink="/comunidade" routerLinkActive="text-[#B8926A]" class="text-[#F4F4F9]/70 hover:text-[#B8926A] transition-all hover:tracking-[0.3em]">Comunidade</a></li>
             <li><a routerLink="/estatuto" routerLinkActive="text-[#B8926A]" class="text-[#F4F4F9]/70 hover:text-[#B8926A] transition-all hover:tracking-[0.3em]">Estatuto</a></li>
             <li><a routerLink="/contato" routerLinkActive="text-[#B8926A]" class="text-[#F4F4F9]/70 hover:text-[#B8926A] transition-all hover:tracking-[0.3em]">Contato</a></li>
-
-            <li>
-                <a routerLink="/contato"
-                    class="rounded-xl px-6 py-2.5 bg-transparent border border-[#B8926A]/60 hover:bg-[#B8926A] hover:text-[#0A1128] hover:shadow-[0_0_20px_rgba(184,146,106,0.4)] text-[#B8926A] transition-all duration-300 font-bold text-[10px]">
-                    Seja um Membro
-                </a>
-            </li>
         </ul>
 
-        <div class="hidden md:flex items-center text-[#F4F4F9]/60 hover:text-[#F4F4F9] transition-opacity">
-            <lang></lang>
+        <div class="hidden md:flex items-center gap-6 shrink-0 z-10">
+            
+            <a routerLink="/contato"
+                class="rounded-xl px-6 py-2.5 bg-transparent border border-[#B8926A]/60 hover:bg-[#B8926A] hover:text-[#0A1128] hover:shadow-[0_0_20px_rgba(184,146,106,0.4)] text-[#B8926A] transition-all duration-300 font-bold text-[10px] uppercase tracking-[0.2em]">
+                Seja um Membro
+            </a>
+            
+            <div class="opacity-80 hover:opacity-100 transition-opacity">
+                <lang></lang>
+            </div>
         </div>
 
-        <button type="button" class="md:hidden ml-auto inline-flex items-center justify-center rounded-md p-2 text-[#B8926A]" (click)="mobileOpen = !mobileOpen">
+        <button type="button" class="md:hidden ml-auto inline-flex items-center justify-center rounded-md p-2 text-[#B8926A] z-10" (click)="mobileOpen = !mobileOpen">
             <svg *ngIf="!mobileOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
             <svg *ngIf="mobileOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current"><path d="M6 18L18 6M6 6l12 12" /></svg>
         </button>

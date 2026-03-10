@@ -4,32 +4,37 @@
 
 @layer base {
     html {
-        font-family: 'Syne', sans-serif;
+        /* A MÁGICA ACONTECE AQUI: Fonte Inter aplicada no site inteiro! */
+        font-family: 'Inter', sans-serif;
 
         scroll-behavior: smooth;
         overflow-x: hidden;
 
+        /* --- SCROLLBAR SUPREME (Azul Midnight e Ouro) --- */
         ::-webkit-scrollbar {
-            width: 6px;
+            width: 8px;
         }
 
-        /* Track */
+        /* Fundo da barra */
         ::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background: #050813; 
         }
 
-        /* Handle */
+        /* A barrinha que desce (Ouro Acadêmico com transparência) */
         ::-webkit-scrollbar-thumb {
-            background: #a9a9a9;
+            background: rgba(184, 146, 106, 0.5);
+            border-radius: 10px;
         }
 
-        /* Handle on hover */
+        /* Quando passa o mouse na barrinha (Ouro Sólido) */
         ::-webkit-scrollbar-thumb:hover {
-            background: #909090 !important;
+            background: #B8926A !important;
         }
     }
 
     body {
+        /* Garantia extra para a fonte não falhar em nenhum texto */
+        font-family: 'Inter', sans-serif;
 
         button,
         li,
@@ -47,7 +52,12 @@
     }
 }
 
+/* Mantém a fonte mono apenas para códigos e dashboards (se precisar) */
+.font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
 
+/* --- SWIPER CONFIGS (Mantidas Intactas) --- */
 swiper-container {
     --swiper-pagination-color: #ffffff;
     /* cor da bolinha ativa */
@@ -72,8 +82,4 @@ swiper-container::-webkit-scrollbar {
 swiper-container {
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-.font-inter {
-    font-family: 'Inter', sans-serif;
 }
