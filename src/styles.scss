@@ -4,82 +4,56 @@
 
 @layer base {
     html {
-        /* A MÁGICA ACONTECE AQUI: Fonte Inter aplicada no site inteiro! */
-        font-family: 'Inter', sans-serif;
-
         scroll-behavior: smooth;
         overflow-x: hidden;
 
-        /* --- SCROLLBAR SUPREME (Azul Midnight e Ouro) --- */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        /* Fundo da barra */
-        ::-webkit-scrollbar-track {
-            background: #050813; 
-        }
-
-        /* A barrinha que desce (Ouro Acadêmico com transparência) */
-        ::-webkit-scrollbar-thumb {
-            background: rgba(184, 146, 106, 0.5);
-            border-radius: 10px;
-        }
-
-        /* Quando passa o mouse na barrinha (Ouro Sólido) */
-        ::-webkit-scrollbar-thumb:hover {
-            background: #B8926A !important;
-        }
+        /* --- SCROLLBAR SUPREME --- */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050813; }
+        ::-webkit-scrollbar-thumb { background: rgba(184, 146, 106, 0.5); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #B8926A !important; }
     }
 
     body {
-        /* Garantia extra para a fonte não falhar em nenhum texto */
-        font-family: 'Inter', sans-serif;
-
-        button,
-        li,
-        a,
-        span {
-            @apply transition-all duration-75 cursor-pointer disabled:cursor-not-allowed;
-        }
-
-        button:hover,
-        a:hover,
-        li:hover,
-        span:hover {
-            @apply transition-all duration-75;
-        }
+        /* Fundo global escuro e texto claro */
+        background-color: #0A1128;
+        color: #F4F4F9;
     }
+
+    /* Animações nativas (sem @apply para não dar erro no VS Code) */
+    button, li, a, span {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+        cursor: pointer;
+    }
+    button:disabled { cursor: not-allowed; }
 }
 
-/* Mantém a fonte mono apenas para códigos e dashboards (se precisar) */
+/* =========================================
+   BLINDAGEM DAS FONTES (Infalível)
+   ========================================= */
+.font-google, .font-google * {
+    font-family: "Google Sans Flex", sans-serif !important;
+}
+
+.font-inter, .font-inter * {
+    font-family: "Inter", sans-serif !important;
+}
+
 .font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace !important;
 }
 
-/* --- SWIPER CONFIGS (Mantidas Intactas) --- */
+/* --- SWIPER CONFIGS --- */
 swiper-container {
     --swiper-pagination-color: #ffffff;
-    /* cor da bolinha ativa */
     --swiper-pagination-bullet-inactive-color: #ffffff;
-    /* cor das inativas */
     --swiper-pagination-bullet-inactive-opacity: .35;
-    /* inativas mais discretas */
     --swiper-pagination-bullet-size: 6px;
-    /* bolinha menor */
     --swiper-pagination-bullet-horizontal-gap: 6px;
-    /* espacinho entre elas */
-}
-
-swiper-container::part(pagination) {
-    margin-top: 8px;
-}
-
-swiper-container::-webkit-scrollbar {
-    display: none;
-}
-
-swiper-container {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+swiper-container::part(pagination) { margin-top: 8px; }
+swiper-container::-webkit-scrollbar { display: none; }
